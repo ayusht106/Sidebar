@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importing Css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Importing Boxicon css in html -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dashboard Sidebar</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="drag-handle" id="dragHandle">
+        <i class='bx bx-right-arrow-alt toggle'></i>
+    </div>
+    <header>
+        <div class="image-text">
+            <span class="image">
+                <image src="logo.png" alt="logo"></image>
+            </span>
+            <div class="text header-text">
+                <span class="name">Welcome</span>
+                <span class="name">XYZ</span>
+
+            </div>
+        </div>
+       
+    </header>
+
+    <div class="menu-bar">
+        <div class="menu">
+            <li class="search-box">
+                    <i class='bx bxs-seach icon'></i>
+                    <input type="search" placeholder="Search..">
+            
+            </li>
+            <ul class="menu-links">
+                <li class="nav-link">
+                <a href="#">
+                    <i class='bx bx-book'></i>
+                    <span class="text nav-text">Notes</span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#">
+                    <i class='bx bx-paperclip'></i>
+                    <span class="text nav-text">Attachments</span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#">
+                    <i class='bx bxs-business'></i>
+                    <span class="text nav-text">Deals</span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#">
+                    <i class='bx bxs-lock-open-alt'></i>
+                    <span class="text nav-text">Open Activities</span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#">
+                    <i class='bx bxs-lock-alt'></i>
+                    <span class="text nav-text">Closed Activities</span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#">
+                    <i class='bx bxs-group'></i>
+                    <span class="text nav-text">Invited Meetings</span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#">
+                    <i class='bx bxs-group'></i>
+                    <span class="text nav-text">Products</span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#">
+                    <i class='bx bxs-group'></i>
+                    <span class="text nav-text">Cases</span>
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#">
+                    <i class='bx bxs-group'></i>
+                    <span class="text nav-text">Quotes</span>
+                </a>
+            </li>
+            </ul>
+        </div>
+           
+    </div>
+</nav>    
+<!-- <script>
+    let isDragging = false;
+
+    document.getElementById('dragHandle').addEventListener('mousedown', (e) => {
+        isDragging = true;
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            document.removeEventListener('mousemove', handleMouseMove);
+        });
+    });
+
+    function handleMouseMove(e) {
+        if (isDragging) {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.height = `${e.clientY}px`;
+        }
+    }
+</script> -->
+</body>
+</html>
